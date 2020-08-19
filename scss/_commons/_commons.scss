@@ -10,10 +10,3 @@
 
 // Compontents commonly used
 @import '_components/_media/sprites.scss';
-
-// Modules commonly used
-.contact-bar {
-    @include media('>=xs', '<=s') {
-        font-size: 10px;
-    }
-}
