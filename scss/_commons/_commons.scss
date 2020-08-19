@@ -1,0 +1,19 @@
+// Basic site configuration
+@import '_config/reset.scss';
+@import '_config/variables.scss';
+@import '_config/mixins.scss';
+@import '_config/mq.scss';
+@import '_config/grid.scss';
+
+// Elements commonly used
+@import '_elements/content.scss';
+
+// Compontents commonly used
+@import '_components/_media/sprites.scss';
+
+// Modules commonly used
+.contact-bar {
+    @include media('>=xs', '<=s') {
+        font-size: 10px;
+    }
+}

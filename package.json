@@ -1,0 +1,55 @@
+{
+  "name": "porfolio",
+  "version": "1.0.0",
+  "description": "Maria Sannez's Portfolio Theme",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --config webpack.dev.js --hide-modules --watch ",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "author": "Maria Sannez",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mariasannez/mariasannez.github.io.git"
+  },
+  "dependencies": {
+    "node": "^12.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^3.0.0",
+    "file-loader": "^4.2.0",
+    "filemanager-webpack-plugin": "^2.0.5",
+    "glob-all": "^3.1.0",
+    "group-css-media-queries-loader": "^3.0.2",
+    "image-webpack-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "progress-bar-webpack-plugin": "^1.12.1",
+    "purgecss-webpack-plugin": "^1.6.0",
+    "rebuild-changed-entrypoints-webpack-plugin": "^1.0.1",
+    "sass-loader": "^7.1.0",
+    "string-replace-loader": "^2.2.0",
+    "stylelint": "^10.1.0",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "terser-webpack-plugin": "^1.4.1",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-entry-plus": "^1.0.15",
+    "webpack-livereload-plugin": "^1.2.0",
+    "webpack-merge": "^4.2.1",
+    "webpack-notifier": "^1.8.0",
+    "webpack-spritesmith": "^1.0.1"
+  },
+  "browserslist": [
+    "last 4 version",
+    "> 1%"
+  ]
+}

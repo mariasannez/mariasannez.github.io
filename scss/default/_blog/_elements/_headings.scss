@@ -1,0 +1,31 @@
+h1 {
+    color: blue;
+    display: flex; 
+    transform: rotate(30deg);
+}
+
+::placeholder {
+    display: flex; 
+}
+
+@media screen and (min-width: 768px) {
+    .foo {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .foo {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .foo {
+        width: 768px;
+    }
+}
+
+.brand__text {
+    font-size: 60px;
+}

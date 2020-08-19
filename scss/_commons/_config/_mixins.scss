@@ -1,0 +1,81 @@
+// TABLE OF CONTENTS:
+// 
+// 1. CLEARFIX
+// 2. FONTS IN REMS
+// 3. CENTERING ELEMENTS
+// 4. ANIMATIONS
+// 5. OPACITY
+// 6. TINT AND SHADE
+// 7. HIDE
+// 8. IMAGE PRELOAD
+
+// ---------------------------------------------
+// 1. CLEARFIX
+// Example of use: .foo {@include clearfix;}
+// ---------------------------------------------
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+// ---------------------------------------------
+// 2. FONTS IN REMS
+// Example of use: .foo {@include fsize(16);}
+// ---------------------------------------------
+@mixin fsize($size, $base: 16) {
+    font-size: $size;
+    font-size: ($size / $base) * 1rem;
+}
+// ---------------------------------------------
+// 3. CENTERING ELEMENTS
+// Example of use: .foo {@include center(both);}
+// ---------------------------------------------
+@mixin center($position) {
+    position: absolute;
+
+    @if $position == 'vertical' {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    @else if $position == 'horizontal' {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translate(-50%);
+    }
+    @else if $position == 'both' {
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+// ---------------------------------------------
+// 4. ANIMATIONS
+// ---------------------------------------------
+
+// ---------------------------------------------
+// 5. OPACITY
+// Example of use: .foo {@include opacity(.4);}
+// ---------------------------------------------
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity = $opacity-ie); //IE8
+}
+// ---------------------------------------------
+// 6. TINT AND SHADE
+// ---------------------------------------------
+
+// ---------------------------------------------
+// 7. HIDE
+// ---------------------------------------------
+
+// ---------------------------------------------
+// 8. IMAGE PRELOAD
+// ---------------------------------------------
